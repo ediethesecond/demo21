@@ -1,0 +1,26 @@
+training:
+  batch_size: 8
+  num_epochs: 50
+  learning_rate: 1e-4
+  mixed_precision: true
+  num_workers: 2
+  pin_memory: true
+  weight_decay: 0.01
+  gradient_clip_val: 1.0
+
+model:
+  backbone: "swin_base_patch4_window7_224"  # Changed from backbone_name to backbone
+  num_classes: 14
+  pretrained: false
+
+data:
+  train_dir: "data/train"
+  val_dir: "data/val"
+  test_dir: "data/test"
+  img_size: 224  # This is used in your model for dummy input
+
+logging:
+  wandb_project: "medical-vision"
+  log_interval: 10
+  save_dir: "checkpoints"
+  save_interval: 1  # Added this as it's used in your trainer

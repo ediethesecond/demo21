@@ -1,0 +1,45 @@
+Current directory: C:\Users\Edie\Documents\Demo2
+
+Directory structure:
+./
+    debug.py
+    README.md
+    requirements.txt
+    setup.py
+    structure.txt
+    medical_vision/
+        requirements.txt
+        _init_.py
+        configs/
+            default_config.yaml
+            _init_.py
+            model_configs/
+                convnext.yaml
+                efficientnet.yaml
+                swin_base.yaml
+        models/
+            classification_head.py
+            decoder.py
+            integrated_vision.py
+            segmentation_head.py
+            _init_.py
+        scripts/
+            evalulate.py
+            train.py
+        training/
+            metrics.py
+            trainer.py
+            _init_.py
+        utils/
+            logger.py
+            visualization.py
+            _init_.py
+    medical_vision.egg-info/
+        dependency_links.txt
+        PKG-INFO
+        requires.txt
+        SOURCES.txt
+        top_level.txt
+    scripts/
+        evalulate.py
+        train.py
